@@ -14,11 +14,13 @@ class _MainAppScreenState extends State<MainAppScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    ProfileScreen(),
+    
+    ContentScreen(),
     FormScreen(),
     LogbookScreen(),
-    ContentScreen(),
     NotificationScreen(),
+    ProfileScreen(),
+    
   ];
 
   @override

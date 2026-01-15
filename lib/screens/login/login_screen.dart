@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../services/api_service.dart';
 import '../register/register_screen.dart';
-import '../profil/profile_screen.dart';
+import '../main_app/main_app_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -31,7 +31,7 @@ void _login() async {
       if (result["ok"] == true) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => ProfileScreen()),
+          MaterialPageRoute(builder: (_) =>  MainAppScreen()),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
