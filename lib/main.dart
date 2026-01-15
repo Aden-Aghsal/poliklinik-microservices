@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/login/login_screen.dart';
-import 'screens/profil/profile_screen.dart';
 import 'utils/storage.dart';
+import 'screens/main_app/main_app_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -63,6 +63,6 @@ class _LandingPageState extends State<LandingPage> {
       return LoginScreen();
     }
 
-    return ProfileScreen(); // langsung ke profil sesuai role
+   return MainAppScreen(); // langsung ke profil sesuai role
   }
 }
