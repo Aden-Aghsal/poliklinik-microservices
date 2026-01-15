@@ -18,7 +18,7 @@ class _MainAppScreenState extends State<MainAppScreen> {
      ProfileScreen(),
     FormScreen(),
     LogbookScreen(),
-    ContentScreen(),
+    HomeScreen(),
     NotificationScreen(),
    
     
