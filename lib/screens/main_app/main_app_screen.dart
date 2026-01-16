@@ -16,10 +16,13 @@ class _MainAppScreenState extends State<MainAppScreen> {
   final List<Widget> _pages = [
     
      ProfileScreen(),
+     ProfileScreen(),
     FormScreen(),
     LogbookScreen(),
     HomeScreen(),
     NotificationScreen(),
+   
+    
    
     
     
