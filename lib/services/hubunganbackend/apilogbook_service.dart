@@ -6,7 +6,7 @@ import '../../utils/storage.dart';
 
 class ApiLogbookService {
   // Gunakan baseUrl dari ApiService utama
-  static const String baseUrl = "http://172.16.186.107:8001/api";
+  static const String baseUrl = "http://192.168.0.6:8001/api/logbooks";
 
   // Header helper (sama seperti ApiService but we need it here cleanly)
   static Map<String, String> _headers({bool auth = true}) {
