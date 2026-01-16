@@ -43,39 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: _buildBodyContent(),
 
       // Penempatan Tombol Floating Tengah (Daftar)
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => setState(() => _currentIndex = 2),
-        backgroundColor: Colors.white,
-        shape: const CircleBorder(),
-        child: const Icon(Icons.list_alt, color: Color(0xFF133E87), size: 30),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-
-      // Desain Bottom Navigation Bar
-      bottomNavigationBar: BottomAppBar(
-  shape: const CircularNotchedRectangle(),
-  notchMargin: 8.0,
-  clipBehavior: Clip.antiAlias,
-  child: BottomNavigationBar(
-    currentIndex: _currentIndex,
-    onTap: (index) => setState(() => _currentIndex = index),
-    type: BottomNavigationBarType.fixed,
-    selectedItemColor: const Color(0xFF133E87),
-    unselectedItemColor: Colors.grey,
-    
-    // UBAH DUA BARIS INI JADI FALSE
-    showSelectedLabels: false, 
-    showUnselectedLabels: false, 
-    
-    items: const [
-      BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Beranda"),
-      BottomNavigationBarItem(icon: Icon(Icons.school_outlined), label: "Log"),
-      BottomNavigationBarItem(icon: SizedBox.shrink(), label: ""), 
-      BottomNavigationBarItem(icon: Icon(Icons.history), label: "Artikel"),
-      BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profil"),
-    ],
-  ),
-),
+     
     );
   }
 

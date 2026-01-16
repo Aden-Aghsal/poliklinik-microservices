@@ -4,10 +4,10 @@ import '../models/news_model.dart';
 
 class ApiServiceKon {
   // Base URL utama
-  static const String baseUrl = 'http://172.16.186.125:9000/api';
+  static const String baseUrl = 'http://192.168.0.19:9000/api';
   
   // URL untuk mengambil gambar dari storage admin
-  static const String storageUrl = 'http://172.16.186.125:9000/storage/';
+  static const String storageUrl = 'http://192.168.0.19:9000/storage/';
   // ================== FUNGSI AMBIL BERITA ==================
   Future<List<NewsModel>> getNews() async {
     try {
